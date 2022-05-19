@@ -1,0 +1,41 @@
+.isWhere {
+  .header .p,
+  .main .p {
+    color: green;
+  }
+
+  :is(.header, .main) .p {
+    color: purple;
+  }
+
+  :where(.header, .main) .p {
+    color: red;
+  }
+
+  .p, .header {
+    color: blue;
+  }
+}
+
+.notHas {
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .valid {
+    display: none;
+  }
+
+  form:has(input[type="checkbox"]:checked) {
+    border: 1px solid yellowgreen;
+  }
+
+  form:has(input[type="checkbox"]:checked) .valid {
+   display: block;
+  }
+
+  form:not(:has(input[type="checkbox"]:checked)) {
+    border: 1px solid firebrick;
+  }
+}

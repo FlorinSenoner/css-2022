@@ -1,0 +1,31 @@
+@layer lib, base, theme;
+
+.card {
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/*
+can also be imported:
+ @layer lib url(lib.css);
+*/
+@layer lib {
+  // would wins thanks to higher specificity
+  div.card {
+    border: 3px solid hotpink;
+  }
+}
+
+@layer base {
+  .card {
+    border: 3px solid black;
+  }
+}
+
+@layer theme {
+  .card {
+    border: 3px solid deepskyblue;
+  }
+}
