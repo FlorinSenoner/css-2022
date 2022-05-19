@@ -55,12 +55,17 @@ function Home() {
           textGradient: '45deg, $blue500 -20%, $pink500 50%',
           textAlign: 'center',
           marginTop: '10vh',
+          marginBottom: '5vh',
         }}
         weight="bold"
       >
         What is new in CSS 2022
       </Text>
-      <Grid.Container gap={2} justify="center">
+      <Grid.Container
+        gap={2}
+        justify="center"
+        css={{ maxWidth: '1200px', m: 'auto' }}
+      >
         <Grid xs={4}>
           <FeatureCard page={ROUTES.CONTAINER_QUERY}>
             1. CSS Container Queries
