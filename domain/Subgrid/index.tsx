@@ -126,6 +126,7 @@ function Card({ title = '', subtitle = '', text = '', seed = '0' }) {
 function Subgrid() {
   return (
     <Container>
+      <Navigation />
       <Text
         h1
         size={60}
@@ -227,7 +228,6 @@ function Subgrid() {
           </Col>
         </Row>
       </Container>
-      <Navigation />
     </Container>
   )
 }

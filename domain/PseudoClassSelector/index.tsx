@@ -88,6 +88,7 @@ form:has(input[type="checkbox"]:checked) .valid {
 function PseudoClassSelector() {
   return (
     <Container>
+      <Navigation />
       <Text
         h1
         size={60}
@@ -268,7 +269,6 @@ function PseudoClassSelector() {
           </Row>
         </Container>
       </section>
-      <Navigation />
     </Container>
   )
 }

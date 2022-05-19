@@ -114,6 +114,7 @@ function Card() {
 function ContainerQueries() {
   return (
     <Container>
+      <Navigation />
       <Text
         h1
         size={60}
@@ -176,7 +177,6 @@ function ContainerQueries() {
           </Col>
         </Row>
       </Container>
-      <Navigation />
     </Container>
   )
 }

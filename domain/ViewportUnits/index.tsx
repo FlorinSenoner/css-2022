@@ -49,6 +49,7 @@ const mdViewportUnitsCSS = `
 function ViewportUnits() {
   return (
     <Container>
+      <Navigation />
       <Text
         h1
         size={60}
@@ -117,7 +118,6 @@ function ViewportUnits() {
           </Col>
         </Row>
       </Container>
-      <Navigation />
     </Container>
   )
 }

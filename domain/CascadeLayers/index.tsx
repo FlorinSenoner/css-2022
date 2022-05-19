@@ -57,6 +57,7 @@ const mdCascadeLayersCSS = `
 function CascadeLayers() {
   return (
     <Container>
+      <Navigation />
       <Text
         h1
         size={60}
@@ -131,7 +132,6 @@ function CascadeLayers() {
           </Col>
         </Row>
       </Container>
-      <Navigation />
     </Container>
   )
 }

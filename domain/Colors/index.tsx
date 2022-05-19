@@ -93,6 +93,7 @@ function Colors() {
 
   return (
     <Container>
+      <Navigation />
       <Text
         h1
         size={60}
@@ -515,7 +516,6 @@ function Colors() {
           </Row>
         </Container>
       </section>
-      <Navigation />
     </Container>
   )
 }
